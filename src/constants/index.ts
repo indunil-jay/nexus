@@ -91,3 +91,42 @@ export const pricingPlans = [
     ],
   },
 ];
+
+export const faqs = [
+  {
+    id: 1,
+    question: "What features should I look for in a task management app?",
+    answer:
+      "When looking for a task management app, you should consider features such as task assignment, due dates, notifications, collaboration tools, progress tracking, integration with other apps, and a user-friendly interface.",
+  },
+  {
+    id: 2,
+    question: "How does a task management app help with teamwork?",
+    answer:
+      "A task management app helps with teamwork by providing a centralized platform where team members can collaborate, share updates, assign tasks, track progress, and communicate effectively. This ensures everyone is on the same page and work is coordinated efficiently.",
+  },
+  {
+    id: 3,
+    question: "What are some popular task management apps?",
+    answer:
+      "Some popular task management apps include Trello, Asana, Monday.com, Todoist, Microsoft To Do, and ClickUp. These apps offer various features to help individuals and teams manage their tasks and projects effectively.",
+  },
+  {
+    id: 4,
+    question: "What are the benefits of using a task management app?",
+    answer:
+      "The benefits of using a task management app include improved organization, enhanced productivity, better time management, streamlined communication, and the ability to track progress and deadlines. These apps help individuals and teams stay on top of their tasks and projects.",
+  },
+  {
+    id: 5,
+    question: "Is there a free version of a task management app available?",
+    answer:
+      "Yes, many task management apps offer free versions with basic features. Examples include Trello, Asana, Todoist, and Microsoft To Do. These free versions are often sufficient for individuals or small teams with basic task management needs.",
+  },
+  {
+    id: 6,
+    question: "How does a task management app help me prioritize my tasks?",
+    answer:
+      "A task management app helps prioritize tasks by allowing you to set due dates, assign priority levels, and categorize tasks. Features like reminders, notifications, and progress tracking also help ensure that important tasks are completed on time.",
+  },
+] as const;

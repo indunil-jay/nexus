@@ -1,6 +1,7 @@
 import MainNav from "@/components/main-navbar";
 import Benifits from "@/components/sections/benifit-section";
 import Company from "@/components/sections/companies-section";
+import FAQs from "@/components/sections/faq-section";
 import Features from "@/components/sections/feature-section";
 import Hero from "@/components/sections/hero-section";
 import Pricing from "@/components/sections/pricing-section";
@@ -18,6 +19,7 @@ export default function Home() {
         <Features />
         <Projects />
         <Pricing />
+        <FAQs />
       </main>
     </>
   );
