@@ -49,3 +49,45 @@ export const taskList = [
 ];
 
 export const users = [user3, user1, user2];
+
+export const pricingPlans = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    describe: "Perfect for individuals and small teams",
+    price: 9.99,
+    btnText: "Get Started",
+    features: [
+      "Task management made easy",
+      "Collaborate with ease",
+      "Track progress Effortlessly",
+    ],
+  },
+  {
+    id: 2,
+    name: "Business Plan",
+    describe: "Ideal for growing teams and business",
+    price: 29.99,
+    btnText: "Get Started",
+    features: [
+      "Advanced task management features",
+      "Enhanced collaboration tools",
+      "Customizable workflows",
+      "integrate with your favorite apps",
+    ],
+  },
+  {
+    id: 3,
+    name: "Enterprise Plan",
+    describe: "Tailored solutions for large organizations",
+    price: 69.99,
+    btnText: "Get Started",
+    features: [
+      "Advance security features",
+      "Dedicated account manager",
+      "24/7 customer support",
+      "Enterprise-grade integrations",
+      "Customizable reporting",
+    ],
+  },
+];
