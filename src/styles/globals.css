@@ -3,4 +3,20 @@
 @tailwind utilities;
 
 :root {
+  --color-primary: 254, 87, 17; /* "#fe5711" */
+  --color-primary-darker: 254, 95, 117; /* "#fe5f75" */
+  --color-primary-lighter: 252, 152, 66; /* "#fc9842" */
+
+  --color-dark-0: 255, 255, 255; /* "#ffffff" */
+  --color-dark-50: 245, 246, 246; /* "#f5f6f6" */
+  --color-dark-100: 229, 231, 232; /* "#e5e7e8" */
+  --color-dark-200: 206, 209, 211; /* "#ced1d3" */
+  --color-dark-300: 172, 176, 180; /* "#acb0b4" */
+  --color-dark-400: 130, 135, 142; /* "#82878e" */
+  --color-dark-500: 103, 108, 115; /* "#676c73" */
+  --color-dark-600: 88, 92, 98; /* "#585c62" */
+  --color-dark-700: 75, 78, 83; /* "#4b4e53" */
+  --color-dark-800: 69, 71, 75; /* "#45474b" */
+  --color-dark-900: 58, 60, 63; /* "#3a3c3f" */
+  --color-dark-950: 36, 37, 40; /* "#242528" */
 }
