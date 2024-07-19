@@ -1,3 +1,4 @@
+import plugin from "tailwindcss/plugin";
 import type { Config } from "tailwindcss";
 
 const withOpacity = (variableName: string) => {
@@ -39,7 +40,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 
 export default config;

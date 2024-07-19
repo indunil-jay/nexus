@@ -20,3 +20,23 @@
   --color-dark-900: 58, 60, 63; /* "#3a3c3f" */
   --color-dark-950: 36, 37, 40; /* "#242528" */
 }
+
+@layer base {
+  body {
+    @apply text-dark-950;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-[2rem] leading-[3.125rem] md:text-[3.625rem] capitalize text-center font-semibold md:leading-[4.125rem];
+  }
+
+  .sub-text-1 {
+    @apply text-dark-600 text-sm md:text-base  font-normal capitalize;
+  }
+
+  .border-type-1 {
+    @apply border border-dark-200/60;
+  }
+}
