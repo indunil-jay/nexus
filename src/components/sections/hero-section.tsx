@@ -31,7 +31,7 @@ const Hero = () => {
         </Button>
         <Button variation="outline">Try Demo</Button>
       </div>
-      <div className="mx-3 max-w-screen-lg absolute top-[30rem] sm:top-[34rem] shadow-2xl my-12 border-type-1  rounded-lg  shadow-primary/30">
+      <div className="mx-3 max-w-screen-lg absolute top-[30rem] sm:top-[34rem] shadow-2xl my-12  rounded-lg  shadow-primary/30">
         <Image
           src={heroImage}
           alt="landing-hero-image"

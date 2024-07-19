@@ -31,6 +31,9 @@
   .heading-1 {
     @apply text-[2rem] leading-[3.125rem] md:text-[3.625rem] capitalize text-center font-semibold md:leading-[4.125rem];
   }
+  .heading-3 {
+    @apply capitalize text-[1.125rem] font-semibold text-dark-500;
+  }
 
   .sub-text-1 {
     @apply text-dark-600 text-sm md:text-base  font-normal capitalize;
