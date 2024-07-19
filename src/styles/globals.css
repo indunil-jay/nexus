@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: 254, 87, 17; /* "#fe5711" */
+  --color-primary: 255, 123, 56; /* "#fe5711" */
   --color-primary-darker: 254, 95, 117; /* "#fe5f75" */
   --color-primary-lighter: 252, 152, 66; /* "#fc9842" */
 

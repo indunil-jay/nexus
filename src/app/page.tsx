@@ -4,6 +4,7 @@ import Company from "@/components/sections/companies-section";
 import ContactUs from "@/components/sections/contact-section";
 import FAQs from "@/components/sections/faq-section";
 import Features from "@/components/sections/feature-section";
+import Footer from "@/components/sections/footer-section";
 import Hero from "@/components/sections/hero-section";
 import Pricing from "@/components/sections/pricing-section";
 import Projects from "@/components/sections/project-section";
@@ -25,6 +26,7 @@ export default function Home() {
         <Testimonials />
         <ContactUs />
       </main>
+      <Footer />
     </>
   );
 }
