@@ -5,6 +5,9 @@ import {
   slack,
   superme,
   zalando,
+  user1,
+  user2,
+  user3,
 } from "@/constants/images";
 
 export const navigations = [
@@ -23,3 +26,24 @@ export const trustedCompanies = [
   { id: 5, img: reddit, name: "company-logo" },
   { id: 6, img: dropbox, name: "company-logo" },
 ] as const;
+
+export const taskList = [
+  {
+    id: 1,
+    name: "Meeting with Client",
+    checked: false,
+    users: [user1, user2, user3],
+  },
+  {
+    id: 2,
+    name: "Design Review with Stakeholders",
+    checked: true,
+    users: [user3, user1, user2],
+  },
+  {
+    id: 3,
+    name: "Design for Landing Page",
+    checked: false,
+    users: [user2, user3, user1],
+  },
+];

@@ -6,4 +6,19 @@ import reddit from "../../public/images/companies-logo/reddit.png";
 import superme from "../../public/images/companies-logo/supreme.png";
 import dropbox from "../../public/images/companies-logo/dropbox.png";
 
-export { heroImage, slack, zalando, deezer, reddit, superme, dropbox };
+import user1 from "../../public/images/users/user-1.jpg";
+import user2 from "../../public/images/users/user-2.jpg";
+import user3 from "../../public/images/users/user-3.jpg";
+
+export {
+  heroImage,
+  slack,
+  zalando,
+  deezer,
+  reddit,
+  superme,
+  dropbox,
+  user1,
+  user2,
+  user3,
+};
