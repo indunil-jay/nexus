@@ -29,7 +29,7 @@ const CheckboxGroup = () => {
               checked={task.checked}
               onChange={() => handleCheckboxChange(task.id)}
             />
-            <p className="text-sm text-dark-900 font-medium peer-checked:line-through peer-checked:opacity-50">
+            <p className="text-sm line-clamp-1 text-dark-900 font-medium peer-checked:line-through peer-checked:opacity-50">
               {task.name}
             </p>
           </label>
