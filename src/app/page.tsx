@@ -6,6 +6,7 @@ import Features from "@/components/sections/feature-section";
 import Hero from "@/components/sections/hero-section";
 import Pricing from "@/components/sections/pricing-section";
 import Projects from "@/components/sections/project-section";
+import Testimonials from "@/components/sections/testimonial-section";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Projects />
         <Pricing />
         <FAQs />
+        <Testimonials />
       </main>
     </>
   );

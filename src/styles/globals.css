@@ -63,3 +63,26 @@
     @apply px-10 max-w-screen-xl mx-auto py-24;
   }
 }
+
+/* Custom Swiper Button Styles */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  color: rgba(0, 0, 0, 0.5) !important;
+  transition: color 0.3s;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+/* Custom Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.5) !important;
+  transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:hover {
+  background: rgba(0, 0, 0, 1) !important;
+}

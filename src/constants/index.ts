@@ -130,3 +130,56 @@ export const faqs = [
       "A task management app helps prioritize tasks by allowing you to set due dates, assign priority levels, and categorize tasks. Features like reminders, notifications, and progress tracking also help ensure that important tasks are completed on time.",
   },
 ] as const;
+
+export const testimonials = [
+  {
+    id: 1,
+    img: user1,
+    name: "Carter Vetrovs",
+    occupation: "Project Manager",
+    rating: 5,
+    review: `Nexus stands out for its flexibility and customization
+              options. it's helped me streamline my workflow and stay on
+              top of my to-do list.`,
+  },
+  {
+    id: 2,
+    img: user2,
+    name: "Alexandra Smith",
+    occupation: "Software Engineer",
+    rating: 4,
+    review: `Using Nexus has significantly improved our team
+              collaboration. The intuitive interface and powerful
+              features make project management a breeze.`,
+  },
+  {
+    id: 3,
+    img: user3,
+    name: "James Nguyen",
+    occupation: "Product Designer",
+    rating: 5,
+    review: `Nexus is a game-changer! Its robust project tracking
+              capabilities and real-time updates have kept my projects
+              on schedule and within budget.`,
+  },
+  {
+    id: 4,
+    img: user1,
+    name: "Sophia Martinez",
+    occupation: "Marketing Director",
+    rating: 5,
+    review: `I love how Nexus integrates with our existing tools.
+              It's streamlined our marketing campaigns and improved
+              overall efficiency.`,
+  },
+  {
+    id: 5,
+    img: user2,
+    name: "David Lee",
+    occupation: "Business Analyst",
+    rating: 4,
+    review: `Nexus offers excellent analytics and reporting
+              features. It's helped us make data-driven decisions and
+              optimize our project strategies.`,
+  },
+];
