@@ -8,7 +8,7 @@ import { motionTransition } from "@/utils/ui-transition";
 
 const FAQs = () => {
   const [openId, setOpenId] = useState<number | null>(null);
-  const { isInView, ref } = useAddTrasition();
+  const { isInView, ref, iobsRef } = useAddTrasition("#faq");
 
   const toggleFaq = (id: number) => {
     setOpenId((prevOpenId) => (prevOpenId === id ? null : id));
@@ -17,6 +17,7 @@ const FAQs = () => {
   return (
     <section id="faq" ref={ref} className="bg-dark-50/30 scroll-mt-24">
       <motion.div
+        ref={iobsRef}
         className="section "
         style={motionTransition(isInView, "translateX(-200px)")}
       >

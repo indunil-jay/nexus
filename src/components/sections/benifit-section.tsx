@@ -9,10 +9,11 @@ import { motionTransition } from "@/utils/ui-transition";
 import { useAddTrasition } from "@/hooks/use-transition";
 
 const Benifits = () => {
-  const { isInView, ref } = useAddTrasition();
+  const { isInView, ref, iobsRef } = useAddTrasition("#benefits");
+
   return (
-    <section id="benefits" ref={ref} className="scroll-mt-24">
-      <div className="section">
+    <section id="benefits" ref={iobsRef} className="scroll-mt-24">
+      <div className="section" ref={ref}>
         <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center">
           <motion.div
             className="flex flex-col "

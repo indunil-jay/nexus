@@ -3,6 +3,7 @@ import { Work_Sans } from "next/font/google";
 import { Allerta_Stencil } from "next/font/google";
 import { clsx } from "clsx";
 import "../styles/globals.css";
+import ActiveSectionContextProvider from "@/contexts/active-section";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={clsx(
           workSans.className,
@@ -33,7 +34,7 @@ export default function RootLayout({
           AllertaStencil.variable
         )}
       >
-        {children}
+        <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
       </body>
     </html>
   );

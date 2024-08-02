@@ -4,11 +4,13 @@ import { useAddTrasition } from "@/hooks/use-transition";
 import { FeatureBlockOne, FeatureBlockTwo } from "@/components/features";
 
 const Features = () => {
-  const { isInView, ref } = useAddTrasition();
+  const { isInView, ref, iobsRef } = useAddTrasition("#features", 0.5);
   return (
-    <section id="features" ref={ref} className="bg-dark-50 scroll-mt-24 ">
-      <FeatureBlockOne isInView={isInView} />
-      <FeatureBlockTwo isInView={isInView} />
+    <section id="features" ref={iobsRef} className="bg-dark-50 scroll-mt-24 ">
+      <div ref={ref}>
+        <FeatureBlockTwo isInView={isInView} />
+        <FeatureBlockOne isInView={isInView} />
+      </div>
     </section>
   );
 };

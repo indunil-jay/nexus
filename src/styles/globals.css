@@ -22,6 +22,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth !important;
+  }
+
   body {
     @apply text-dark-950;
   }
