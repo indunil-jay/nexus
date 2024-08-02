@@ -21,11 +21,7 @@ const Hero = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section
-      id="home"
-      ref={ref}
-      className="flex flex-col items-center pt-16 sm:pt-24 pb-80"
-    >
+    <section id="home" ref={ref} className="flex flex-col items-center  py-16">
       <motion.div
         style={motionTransition(isInView, "translateX(-200px)")}
         className="flex items-center flex-col"
@@ -59,7 +55,7 @@ const Hero = () => {
 
       <motion.div
         style={motionTransition(isInView, "translateY(200px)")}
-        className="mx-3 max-w-screen-lg absolute top-[30rem] sm:top-[34rem] shadow-2xl my-12  rounded-lg  shadow-primary/30"
+        className="mx-3 max-w-screen-lg  shadow-2xl mt-12  rounded-lg  shadow-primary/30"
       >
         <Image
           src={heroImage}

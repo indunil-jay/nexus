@@ -25,6 +25,12 @@ export const trustedCompanies = [
   { id: 4, img: zalando, name: "company-logo" },
   { id: 5, img: reddit, name: "company-logo" },
   { id: 6, img: dropbox, name: "company-logo" },
+  { id: 7, img: deezer, name: "company-logo" },
+  { id: 8, img: superme, name: "company-logo" },
+  { id: 9, img: slack, name: "company-logo" },
+  { id: 10, img: zalando, name: "company-logo" },
+  { id: 11, img: reddit, name: "company-logo" },
+  { id: 12, img: dropbox, name: "company-logo" },
 ] as const;
 
 export const taskList = [

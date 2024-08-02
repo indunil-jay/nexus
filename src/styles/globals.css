@@ -29,7 +29,7 @@
 
 @layer components {
   .heading-1 {
-    @apply text-[2rem] leading-[3.125rem] md:text-[3.625rem] capitalize text-center font-semibold md:leading-[4.125rem];
+    @apply text-[1.9rem] leading-[3.125rem] md:text-[3.625rem] capitalize text-center font-semibold md:leading-[4.125rem];
   }
   .heading-2 {
     @apply text-[1.8rem] leading-[2.2rem] sm:text-[2.75rem] sm:leading-[2.75rem]  font-semibold;
@@ -60,7 +60,7 @@
   }
 
   .section {
-    @apply px-10 max-w-screen-xl mx-auto py-24;
+    @apply px-5 md:px-10 max-w-screen-xl mx-auto py-20;
   }
 }
 
