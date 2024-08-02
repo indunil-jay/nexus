@@ -1,18 +1,25 @@
 "use client";
 import { faqs } from "@/constants";
+import { useAddTrasition } from "@/hooks/use-transition";
 import { useState } from "react";
 import { HiMiniMinusCircle, HiMiniPlusCircle } from "react-icons/hi2";
+import { motion } from "framer-motion";
+import { motionTransition } from "@/utils/ui-transition";
 
 const FAQs = () => {
   const [openId, setOpenId] = useState<number | null>(null);
+  const { isInView, ref } = useAddTrasition();
 
   const toggleFaq = (id: number) => {
     setOpenId((prevOpenId) => (prevOpenId === id ? null : id));
   };
 
   return (
-    <section className="bg-dark-50/30">
-      <div className="section ">
+    <section ref={ref} className="bg-dark-50/30">
+      <motion.div
+        className="section "
+        style={motionTransition(isInView, "translateX(-200px)")}
+      >
         <div className="text-center flex flex-col gap-5">
           <h2 className="heading-2">Frequently Asked Questions</h2>
           <p className="sub-text-1 max-w-md mx-auto">
@@ -56,7 +63,7 @@ const FAQs = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

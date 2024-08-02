@@ -1,18 +1,26 @@
 "use client";
+
 import { useState } from "react";
 import clsx from "clsx";
 import { HiMiniCheck } from "react-icons/hi2";
 import Button from "@/components/ui/button";
 import GradientTag from "@/components/ui/gradient-tag";
 import { pricingPlans } from "@/constants";
+import { useAddTrasition } from "@/hooks/use-transition";
+import { motion } from "framer-motion";
+import { motionTransition } from "@/utils/ui-transition";
 
 const Pricing = () => {
   const [togglePrice, setTogglePrice] = useState<"monthly" | "yearly">(
     "monthly"
   );
+  const { isInView, ref } = useAddTrasition();
   return (
-    <section className="section">
-      <div className="flex flex-col items-center">
+    <section ref={ref} className="section">
+      <motion.div
+        style={motionTransition(isInView, "translateY(200px)")}
+        className="flex flex-col items-center"
+      >
         <div className="flex items-center flex-col justify-center text-center pb-10 w-full">
           <div className="w-fit mx-auto">
             <GradientTag>Simplify</GradientTag>
@@ -76,7 +84,7 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
