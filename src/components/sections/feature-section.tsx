@@ -1,3 +1,4 @@
+"use client";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import {
   HiArrowLongRight,
@@ -7,12 +8,19 @@ import {
 import Tag from "@/components/ui/tag";
 import Button from "@/components/ui/button";
 import Window from "@/components/ui/window";
+import { motionTransition } from "@/utils/ui-transition";
+import { useAddTrasition } from "@/hooks/use-transition";
+import { motion } from "framer-motion";
 
 const Features = () => {
+  const { isInView, ref } = useAddTrasition();
   return (
-    <section className="bg-dark-50 ">
-      <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center section">
-        <div className="order-3">
+    <section ref={ref} className="bg-dark-50 ">
+      <div className="lg:grid flex flex-col gap-14 gird-cols-1 lg:grid-cols-2 items-center section">
+        <motion.div
+          style={motionTransition(isInView, "translateX(-200px)")}
+          className="flex flex-col order-1 lg:order-none"
+        >
           <Window>
             <div className="flex flex-col px-5">
               <div className="flex justify-between items-center py-4 border-b">
@@ -73,9 +81,12 @@ const Features = () => {
               </div>
             </div>
           </Window>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col ">
+        <motion.div
+          className="order-5  lg:order-none"
+          style={motionTransition(isInView, "translateX(200px)")}
+        >
           <Tag>Features</Tag>
           <h2 className="heading-2 lg:w-[90%] mt-3">
             Get a Progress Report That You have Achieved
@@ -94,7 +105,7 @@ const Features = () => {
               </span>
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

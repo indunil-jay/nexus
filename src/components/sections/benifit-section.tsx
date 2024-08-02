@@ -1,15 +1,23 @@
+"use client";
 import { HiMiniCheck } from "react-icons/hi2";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import Tag from "@/components/ui/tag";
 import CheckboxGroup from "@/components/ui/checkbox-group";
 import Window from "@/components/ui/window";
+import { motion } from "framer-motion";
+import { motionTransition } from "@/utils/ui-transition";
+import { useAddTrasition } from "@/hooks/use-transition";
 
 const Benifits = () => {
+  const { isInView, ref } = useAddTrasition();
   return (
-    <section id="benefits">
+    <section id="benefits" ref={ref}>
       <div className="section">
         <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center">
-          <div className="flex flex-col ">
+          <motion.div
+            className="flex flex-col "
+            style={motionTransition(isInView, "translateX(-200px)")}
+          >
             <Tag>Benefits</Tag>
             <h2 className="heading-2 lg:w-4/5 mt-3">
               Achieve More in Less Time Today
@@ -49,22 +57,23 @@ const Benifits = () => {
                 <p className="sub-text-3">Collaborate with Teams Seamlessly</p>
               </li>
             </ul>
-          </div>
-
-          <Window>
-            <div className="flex flex-col px-5">
-              <div className="flex justify-between items-center py-4 border-b">
-                <h4 className="heading-4">SasS Project 🚀</h4>
-                <HiOutlineDotsHorizontal className="text-dark-700" />
-              </div>
-              <div className="flex flex-col">
-                <h5 className="heading-5 py-4">Tasks</h5>
-                <div className="flex flex-col gap-y-2.5">
-                  <CheckboxGroup />
+          </motion.div>
+          <motion.div style={motionTransition(isInView, "translateX(200px)")}>
+            <Window>
+              <div className="flex flex-col px-5">
+                <div className="flex justify-between items-center py-4 border-b">
+                  <h4 className="heading-4">SasS Project 🚀</h4>
+                  <HiOutlineDotsHorizontal className="text-dark-700" />
+                </div>
+                <div className="flex flex-col">
+                  <h5 className="heading-5 py-4">Tasks</h5>
+                  <div className="flex flex-col gap-y-2.5">
+                    <CheckboxGroup />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Window>
+            </Window>
+          </motion.div>
         </div>
       </div>
     </section>

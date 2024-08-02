@@ -5,21 +5,12 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import Button from "@/components/ui/button";
 import GradientTag from "@/components/ui/gradient-tag";
 import { heroImage } from "@/constants/images";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { motion } from "framer-motion";
-
-export const motionTransition = (isInView: boolean, translation: string) => {
-  return {
-    transform: isInView ? "none" : translation,
-    opacity: isInView ? 1 : 0,
-    transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s`,
-  };
-};
+import { motionTransition } from "@/utils/ui-transition";
+import { useAddTrasition } from "@/hooks/use-transition";
 
 const Hero = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { isInView, ref } = useAddTrasition();
   return (
     <section id="home" ref={ref} className="flex flex-col items-center  py-16">
       <motion.div

@@ -5,7 +5,7 @@ import DesktopNav from "@/components/desktop-nav";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { motionTransition } from "./sections/hero-section";
+import { motionTransition } from "@/utils/ui-transition";
 
 const MainNav = () => {
   const ref = useRef(null);

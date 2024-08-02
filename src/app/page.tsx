@@ -17,7 +17,7 @@ export default function Home() {
       <MainNav />
       <main>
         <Hero />
-        {/* <Company /> */}
+        <Company />
         <Benifits />
         <Features />
         <Projects />

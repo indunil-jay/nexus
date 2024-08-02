@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Company = () => {
   return (
-    <section className="flex flex-col items-center pt-[10rem] sm:pt-[26rem] lg:pt-[32rem]">
+    <section className="section pb-0">
       <div className="max-w-screen-xl mx-auto overflow-clip p-6">
         <h3 className=" text-center heading-3">
           Trusted by the fastest growing companies
         </h3>
-        {/* 
-        <div className="mt-10 bg-red-500 flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+
+        <div className="mt-10 flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.ul
             className="flex gap-14 flex-none pr-14"
             animate={{ translateX: "-50%" }}
@@ -27,12 +27,12 @@ const Company = () => {
                 <Image
                   src={company.img}
                   alt={`${company.name}-${company.id}`}
-                  className="h-5 md:h-8 w-auto "
+                  className="h-6 sm:h-8 w-auto "
                 />
               </li>
             ))}
           </motion.ul>
-        </div> */}
+        </div>
       </div>
     </section>
   );
