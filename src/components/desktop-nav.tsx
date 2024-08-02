@@ -2,11 +2,13 @@
 
 import { navigations } from "@/constants";
 import clsx from "clsx";
+import { link } from "fs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const DesktopNav = () => {
   const pathname = usePathname();
+
   return (
     <ul className="hidden md:flex items-center gap-2 ">
       {navigations.map((item) => (

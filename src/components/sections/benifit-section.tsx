@@ -6,7 +6,7 @@ import Window from "@/components/ui/window";
 
 const Benifits = () => {
   return (
-    <section className="section">
+    <section id="benefits" className="section">
       <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center  place-items-center">
         <div className="flex flex-col ">
           <Tag>Benefits</Tag>
