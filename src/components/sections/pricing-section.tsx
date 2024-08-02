@@ -13,10 +13,10 @@ const Pricing = () => {
   const [togglePrice, setTogglePrice] = useState<"monthly" | "yearly">(
     "monthly"
   );
-  const { isInView, ref, iobsRef } = useAddTrasition("#pricing");
+  const { isInView, ref, iobsRef } = useAddTrasition("#pricing", 0.1);
   return (
-    <section id="pricing" ref={iobsRef} className="section scroll-mt-24">
-      <div ref={ref} className="overflow-hidden">
+    <section id="pricing" ref={iobsRef} className=" scroll-mt-24">
+      <div ref={ref} className="overflow-hidden section">
         <div
           style={motionTransition(isInView, "translateY(200px)")}
           className="flex flex-col items-center"

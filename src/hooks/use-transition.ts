@@ -5,8 +5,10 @@ import { useInView as useInViewIObs } from "react-intersection-observer";
 import { useRouter } from "next/navigation";
 import { navigations } from "@/constants";
 
+export type OtherSections = "#testimonial" | "#contactus";
+
 export const useAddTrasition = (
-  activeSection?: (typeof navigations)[number]["url"],
+  activeSection?: (typeof navigations)[number]["url"] | OtherSections,
   thresholdValue?: number
 ) => {
   const { setActiveSection, timeOfLastClick } = useActiveSection();
@@ -20,9 +22,9 @@ export const useAddTrasition = (
   const router = useRouter();
 
   useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection(activeSection || "#home");
-      router.push(activeSection || "#home");
+    if (inView && Date.now() - timeOfLastClick > 1000 && activeSection) {
+      setActiveSection(activeSection);
+      router.push(activeSection);
     }
   }, [
     inView,
@@ -30,6 +32,7 @@ export const useAddTrasition = (
     thresholdValue,
     setActiveSection,
     timeOfLastClick,
+    router.push,
   ]);
 
   return { ref, isInView, iobsRef };

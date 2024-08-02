@@ -16,10 +16,10 @@ import { motionTransition } from "@/utils/ui-transition";
 import { useAddTrasition } from "@/hooks/use-transition";
 
 const Testimonials = () => {
-  const { isInView, ref } = useAddTrasition();
+  const { isInView, ref, iobsRef } = useAddTrasition("#testimonial");
 
   return (
-    <section>
+    <section id="testimonial" ref={iobsRef}>
       <div ref={ref} className="overflow-hidden section">
         <div
           style={motionTransition(isInView, "translateX(200px)")}

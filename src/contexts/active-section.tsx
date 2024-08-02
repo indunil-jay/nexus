@@ -1,8 +1,9 @@
 "use client";
 import { navigations } from "@/constants";
+import { OtherSections } from "@/hooks/use-transition";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 
-type SectionTypes = (typeof navigations)[number]["url"];
+type SectionTypes = (typeof navigations)[number]["url"] | OtherSections;
 
 interface IActiveSectionContext {
   activeSection: SectionTypes;
