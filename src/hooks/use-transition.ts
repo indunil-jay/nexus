@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { navigations } from "@/constants";
 
 export const useAddTrasition = (
-  activeSection: (typeof navigations)[number]["url"],
+  activeSection?: (typeof navigations)[number]["url"],
   thresholdValue?: number
 ) => {
   const { setActiveSection, timeOfLastClick } = useActiveSection();
@@ -22,7 +22,7 @@ export const useAddTrasition = (
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection(activeSection || "#home");
-      router.push(activeSection);
+      router.push(activeSection || "#home");
     }
   }, [
     inView,

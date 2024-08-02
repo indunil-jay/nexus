@@ -4,7 +4,6 @@ import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import Tag from "@/components/ui/tag";
 import CheckboxGroup from "@/components/ui/checkbox-group";
 import Window from "@/components/ui/window";
-import { motion } from "framer-motion";
 import { motionTransition } from "@/utils/ui-transition";
 import { useAddTrasition } from "@/hooks/use-transition";
 
@@ -13,9 +12,9 @@ const Benifits = () => {
 
   return (
     <section id="benefits" ref={iobsRef} className="scroll-mt-24">
-      <div className="section" ref={ref}>
+      <div ref={ref} className="overflow-hidden section">
         <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center">
-          <motion.div
+          <div
             className="flex flex-col "
             style={motionTransition(isInView, "translateX(-200px)")}
           >
@@ -58,8 +57,8 @@ const Benifits = () => {
                 <p className="sub-text-3">Collaborate with Teams Seamlessly</p>
               </li>
             </ul>
-          </motion.div>
-          <motion.div style={motionTransition(isInView, "translateX(200px)")}>
+          </div>
+          <div style={motionTransition(isInView, "translateX(200px)")}>
             <Window>
               <div className="flex flex-col px-5">
                 <div className="flex justify-between items-center py-4 border-b">
@@ -74,7 +73,7 @@ const Benifits = () => {
                 </div>
               </div>
             </Window>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

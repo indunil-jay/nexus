@@ -7,7 +7,6 @@ import Button from "@/components/ui/button";
 import GradientTag from "@/components/ui/gradient-tag";
 import { pricingPlans } from "@/constants";
 import { useAddTrasition } from "@/hooks/use-transition";
-import { motion } from "framer-motion";
 import { motionTransition } from "@/utils/ui-transition";
 
 const Pricing = () => {
@@ -17,8 +16,8 @@ const Pricing = () => {
   const { isInView, ref, iobsRef } = useAddTrasition("#pricing");
   return (
     <section id="pricing" ref={iobsRef} className="section scroll-mt-24">
-      <div ref={ref}>
-        <motion.div
+      <div ref={ref} className="overflow-hidden">
+        <div
           style={motionTransition(isInView, "translateY(200px)")}
           className="flex flex-col items-center"
         >
@@ -85,7 +84,7 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

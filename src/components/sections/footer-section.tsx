@@ -2,7 +2,6 @@
 import Logo from "@/components/ui/logo";
 import { useAddTrasition } from "@/hooks/use-transition";
 import { motionTransition } from "@/utils/ui-transition";
-import { motion } from "framer-motion";
 
 const Footer = () => {
   const { isInView, ref } = useAddTrasition();
@@ -12,7 +11,7 @@ const Footer = () => {
       ref={ref}
       className="relative h-[19rem] bg-gradient-to-br from-black to-dark-950 text-dark-0 px-10 flex items-center flex-col justify-center overflow-hidden"
     >
-      <motion.div style={motionTransition(isInView, "translateY(200px)")}>
+      <div style={motionTransition(isInView, "translateY(200px)")}>
         <div className="flex flex-col justify-between items-center py-14 lg:py-10 text-center">
           <Logo variation="light" />
           <span className="text-sm font-light">
@@ -38,7 +37,7 @@ const Footer = () => {
         <span className="absolute top-1/2 leading-none tracking-wider -translate-x-1/2 left-1/2 -translate-y-1/2 text-[6.2rem] sm:text-[12rem] font-semibold opacity-10 z-10 ">
           NEXUS
         </span>
-      </motion.div>
+      </div>
     </footer>
   );
 };

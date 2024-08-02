@@ -7,7 +7,7 @@ const Features = () => {
   const { isInView, ref, iobsRef } = useAddTrasition("#features", 0.5);
   return (
     <section id="features" ref={iobsRef} className="bg-dark-50 scroll-mt-24 ">
-      <div ref={ref}>
+      <div ref={ref} className="overflow-hidden">
         <FeatureBlockTwo isInView={isInView} />
         <FeatureBlockOne isInView={isInView} />
       </div>

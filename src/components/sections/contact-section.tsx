@@ -4,13 +4,12 @@ import Button from "@/components/ui/button";
 import { BsSendFill } from "react-icons/bs";
 import { motionTransition } from "@/utils/ui-transition";
 import { useAddTrasition } from "@/hooks/use-transition";
-import { motion } from "framer-motion";
 
 const ContactUs = () => {
   const { isInView, ref } = useAddTrasition();
   return (
     <section ref={ref} className="section ">
-      <motion.div
+      <div
         style={motionTransition(isInView, "translateX(-200px)")}
         className="text-center flex flex-col gap-5 mb-20  max-w-md mx-auto"
       >
@@ -44,7 +43,7 @@ const ContactUs = () => {
             </Button>
           </div>
         </label>
-      </motion.div>
+      </div>
     </section>
   );
 };

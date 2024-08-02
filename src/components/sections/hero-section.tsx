@@ -5,7 +5,6 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import Button from "@/components/ui/button";
 import GradientTag from "@/components/ui/gradient-tag";
 import { heroImage } from "@/constants/images";
-import { motion } from "framer-motion";
 import { motionTransition } from "@/utils/ui-transition";
 import { useAddTrasition } from "@/hooks/use-transition";
 
@@ -17,8 +16,8 @@ const Hero = () => {
       ref={iobsRef}
       className="flex flex-col items-center scroll-mt-24  py-16"
     >
-      <div ref={ref}>
-        <motion.div
+      <div ref={ref} className="overflow-hidden">
+        <div
           style={motionTransition(isInView, "translateX(-200px)")}
           className="flex items-center flex-col"
         >
@@ -47,9 +46,9 @@ const Hero = () => {
             </Button>
             <Button variation="outline">Try Demo</Button>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           style={motionTransition(isInView, "translateY(200px)")}
           className="mx-3 max-w-screen-lg  shadow-2xl mt-12  rounded-lg  shadow-primary/30"
         >
@@ -59,7 +58,7 @@ const Hero = () => {
             className="object-cover "
             priority
           />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

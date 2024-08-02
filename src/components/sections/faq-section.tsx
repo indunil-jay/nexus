@@ -3,7 +3,6 @@ import { faqs } from "@/constants";
 import { useAddTrasition } from "@/hooks/use-transition";
 import { useState } from "react";
 import { HiMiniMinusCircle, HiMiniPlusCircle } from "react-icons/hi2";
-import { motion } from "framer-motion";
 import { motionTransition } from "@/utils/ui-transition";
 
 const FAQs = () => {
@@ -15,10 +14,10 @@ const FAQs = () => {
   };
 
   return (
-    <section id="faq" ref={ref} className="bg-dark-50/30 scroll-mt-24">
-      <motion.div
-        ref={iobsRef}
-        className="section "
+    <section id="faq" ref={iobsRef} className="bg-dark-50/30 scroll-mt-24">
+      <div
+        ref={ref}
+        className="section overflow-hidden"
         style={motionTransition(isInView, "translateX(-200px)")}
       >
         <div className="text-center flex flex-col gap-5">
@@ -64,7 +63,7 @@ const FAQs = () => {
             ))}
           </ul>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

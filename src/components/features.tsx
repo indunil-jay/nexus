@@ -9,17 +9,15 @@ import {
 import Tag from "@/components/ui/tag";
 import Button from "@/components/ui/button";
 import UserGroup from "@/components/ui/user-group";
-
 import { users } from "@/constants";
 import Window from "@/components/ui/window";
-import { motion } from "framer-motion";
 import { motionTransition } from "@/utils/ui-transition";
 
 export const FeatureBlockOne = ({ isInView }: { isInView: boolean }) => {
   return (
     <div className="bg-dark-0">
       <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center section ">
-        <motion.div
+        <div
           style={motionTransition(isInView, "translateX(-200px)")}
           className="flex flex-col justify-center "
         >
@@ -40,9 +38,9 @@ export const FeatureBlockOne = ({ isInView }: { isInView: boolean }) => {
               </span>
             </Button>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div style={motionTransition(isInView, "translateX(200px)")}>
+        <div style={motionTransition(isInView, "translateX(200px)")}>
           <Window>
             <div className="flex flex-col px-5 overflow-hidden">
               <div className="flex justify-between items-center py-4 border-b">
@@ -98,7 +96,7 @@ export const FeatureBlockOne = ({ isInView }: { isInView: boolean }) => {
               </div>
             </div>
           </Window>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
@@ -107,7 +105,7 @@ export const FeatureBlockOne = ({ isInView }: { isInView: boolean }) => {
 export const FeatureBlockTwo = ({ isInView }: { isInView: boolean }) => {
   return (
     <div className="lg:grid flex flex-col gap-14 gird-cols-1 lg:grid-cols-2 items-center section">
-      <motion.div
+      <div
         style={motionTransition(isInView, "translateX(-200px)")}
         className="flex flex-col order-1 lg:order-none"
       >
@@ -171,9 +169,9 @@ export const FeatureBlockTwo = ({ isInView }: { isInView: boolean }) => {
             </div>
           </div>
         </Window>
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         className="order-5  lg:order-none"
         style={motionTransition(isInView, "translateX(200px)")}
       >
@@ -195,7 +193,7 @@ export const FeatureBlockTwo = ({ isInView }: { isInView: boolean }) => {
             </span>
           </Button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
