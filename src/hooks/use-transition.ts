@@ -32,7 +32,7 @@ export const useAddTrasition = (
     thresholdValue,
     setActiveSection,
     timeOfLastClick,
-    router.push,
+    router,
   ]);
 
   return { ref, isInView, iobsRef };
