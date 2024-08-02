@@ -1,5 +1,4 @@
-# Nexus Task Management Software Landing Page
-
+# Nexus SaaS Company Landing Page.
 This project is a landing page designed to promote and sell Nexus, an advanced task management software. Built with cutting-edge web technologies, the landing page is crafted to highlight the software's key features, benefits, and unique selling points, providing potential users with a comprehensive overview.
 
 ### Features:
