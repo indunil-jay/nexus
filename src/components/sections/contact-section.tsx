@@ -20,17 +20,17 @@ const ContactUs = () => {
           time.
         </p>
 
-        <label className="flex flex-col sm:flex-row gap-2">
-          <div>
+        <label className="flex flex-col items-center sm:flex-row gap-2 ">
+          <div className="flex-1">
             <input
               type="email"
               required
               autoComplete="email"
-              placeholder="Enter your email address"
+              placeholder="youremail@gmail.com"
               className={clsx(
-                "border border-dark-950/10  font-medium max-w-[320px] sm:max-w-md w-full h-[3rem] rounded-md shadow-sm px-5 caret-dark-950 text-dark-950",
+                "border border-dark-950/10  font-medium max-w-[360px]  sm:max-w-md w-full h-[3rem] rounded-md shadow-sm px-5 caret-dark-950 text-dark-950",
                 "focus:outline-none focus:border-dark-950/30 foucs:ring-2 focus:ring-dark-950 focus:ring-offset-[6px]",
-                "placeholder:text-dark-300",
+                "placeholder:text-dark-300 placeholder:font-light",
                 " disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
               )}
             />

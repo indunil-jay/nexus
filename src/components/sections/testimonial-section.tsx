@@ -69,7 +69,7 @@ const Testimonials = () => {
                     <Image
                       src={testimonial.img}
                       alt="testimonial-user-image"
-                      className="h-[3.6rem] aspect-square"
+                      className="h-[3.6rem] aspect-square object-cover"
                     />
                   </div>
                   <div className="mb-3">

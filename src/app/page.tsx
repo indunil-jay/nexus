@@ -7,7 +7,6 @@ import Features from "@/components/sections/feature-section";
 import Footer from "@/components/sections/footer-section";
 import Hero from "@/components/sections/hero-section";
 import Pricing from "@/components/sections/pricing-section";
-import Projects from "@/components/sections/project-section";
 import Testimonials from "@/components/sections/testimonial-section";
 
 export default function Home() {
@@ -20,12 +19,11 @@ export default function Home() {
         <Company />
         <Benifits />
         <Features />
-        <Projects />
         <Pricing />
         <FAQs />
 
         <Testimonials />
-        {/*<ContactUs /> */}
+        <ContactUs />
       </main>
       <Footer />
     </>

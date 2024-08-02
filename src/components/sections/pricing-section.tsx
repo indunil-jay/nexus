@@ -16,7 +16,7 @@ const Pricing = () => {
   );
   const { isInView, ref } = useAddTrasition();
   return (
-    <section ref={ref} className="section">
+    <section id="pricing" ref={ref} className="section">
       <motion.div
         style={motionTransition(isInView, "translateY(200px)")}
         className="flex flex-col items-center"
