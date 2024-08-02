@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const ContactUs = () => {
   const { isInView, ref } = useAddTrasition();
   return (
-    <section ref={ref} className="section">
+    <section ref={ref} className="section ">
       <motion.div
         style={motionTransition(isInView, "translateX(-200px)")}
         className="text-center flex flex-col gap-5 mb-20  max-w-md mx-auto"

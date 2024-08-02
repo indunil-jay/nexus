@@ -15,7 +15,7 @@ const FAQs = () => {
   };
 
   return (
-    <section id="faq" ref={ref} className="bg-dark-50/30">
+    <section id="faq" ref={ref} className="bg-dark-50/30 scroll-mt-24">
       <motion.div
         className="section "
         style={motionTransition(isInView, "translateX(-200px)")}

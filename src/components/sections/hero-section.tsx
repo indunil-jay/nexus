@@ -12,7 +12,11 @@ import { useAddTrasition } from "@/hooks/use-transition";
 const Hero = () => {
   const { isInView, ref } = useAddTrasition();
   return (
-    <section id="home" ref={ref} className="flex flex-col items-center  py-16">
+    <section
+      id="home"
+      ref={ref}
+      className="flex flex-col items-center scroll-mt-24  py-16"
+    >
       <motion.div
         style={motionTransition(isInView, "translateX(-200px)")}
         className="flex items-center flex-col"

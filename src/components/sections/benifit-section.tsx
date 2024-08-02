@@ -11,7 +11,7 @@ import { useAddTrasition } from "@/hooks/use-transition";
 const Benifits = () => {
   const { isInView, ref } = useAddTrasition();
   return (
-    <section id="benefits" ref={ref} className="overflow-hidden">
+    <section id="benefits" ref={ref} className="scroll-mt-24">
       <div className="section">
         <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center">
           <motion.div
