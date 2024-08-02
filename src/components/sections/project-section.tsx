@@ -14,7 +14,7 @@ import { motionTransition } from "@/utils/ui-transition";
 const Projects = () => {
   const { isInView, ref } = useAddTrasition();
   return (
-    <section ref={ref} className="bg-dark-0">
+    <section ref={ref} className="bg-dark-0 overflow-hidden">
       <div className="section">
         <div className="grid gap-14 gird-cols-1 lg:grid-cols-2 items-center ">
           <motion.div

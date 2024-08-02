@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   const { isInView, ref } = useAddTrasition();
   return (
-    <section ref={ref} className="bg-dark-50 ">
+    <section ref={ref} className="bg-dark-50 overflow-hidden ">
       <div className="lg:grid flex flex-col gap-14 gird-cols-1 lg:grid-cols-2 items-center section">
         <motion.div
           style={motionTransition(isInView, "translateX(-200px)")}

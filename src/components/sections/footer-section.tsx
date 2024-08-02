@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer
       ref={ref}
-      className="relative h-[19rem] bg-gradient-to-br from-black to-dark-950 text-dark-0 px-10 flex items-center flex-col justify-center"
+      className="relative h-[19rem] bg-gradient-to-br from-black to-dark-950 text-dark-0 px-10 flex items-center flex-col justify-center overflow-hidden"
     >
-      <motion.div style={motionTransition(isInView, "translateY(-200px)")}>
+      <motion.div style={motionTransition(isInView, "translateY(200px)")}>
         <div className="flex flex-col justify-between items-center py-14 lg:py-10 text-center">
           <Logo variation="light" />
           <span className="text-sm font-light">

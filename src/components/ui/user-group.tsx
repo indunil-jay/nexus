@@ -16,12 +16,7 @@ const UserGroup = ({ size, users }: UserGroupProps) => {
             "aspect-square border border-dark-0 rounded-full bg-dark-100 relative overflow-clip"
           )}
         >
-          <Image
-            src={user}
-            alt={`${user}-${index + 1}`}
-            fill
-            className="object-cover"
-          />
+          <Image src={user} alt={`${user}-${index + 1}`} className="h-5 w-5" />
         </div>
       ))}
     </div>

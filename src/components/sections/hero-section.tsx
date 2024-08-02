@@ -52,6 +52,7 @@ const Hero = () => {
           src={heroImage}
           alt="landing-hero-image"
           className="object-cover "
+          priority
         />
       </motion.div>
     </section>
